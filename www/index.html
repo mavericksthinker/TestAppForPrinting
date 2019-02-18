@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+    <!--
+    Customize this policy to fit your own app's needs. For more guidance, see:
+        https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+    Some notes:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+    -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hello World</title>
+</head>
+<body>
+<div class="app">
+    <h1>Print Prototype</h1>
+    <div id="deviceready" class="blink">
+        <H3>A short demo of my ESCPOS printing On Apache Cordova</H3>
+        <HR>
+        Printers available on Android
+        <select id="printerlist"></select>&nbsp;&nbsp;&nbsp;
+        <HR>
+        <p>
+            <input type = 'text' id = 'custom' placeholder="Enter Printer Name/IP" />
+        </p>
+        <p>
+            <input type="submit" class="menuebuttons" value="Find BlueTooth printers" onclick="findBluetoothPrinters()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Find Wifi printers" onclick="findWifiPrinters()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Find USB printers" onclick="findUSBPrinters()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Connect to printer" onclick="connectToPrinter()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Disconnect from the printer" onclick="disconnectFromPrinter()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Print some text" onclick="text_print()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Print an Image" onclick="image_print()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Print a QR-Code(ESCPOS)" onclick="ESCPOS_qrCode()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Print a BarCode(ESCPOS)" onclick="ESCPOS_barCode()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Print Full Demo" onclick="Test_Full()"/>
+        <p>
+            <input type="submit" class="menuebuttons" value="Cut" onclick="cut()"/>
+        <p>
+    </div>
+</div>
+    <script type = "text/javascript" src="cordova.js"></script>
+    <script type = "text/javascript" src="js/index.js"></script>
+    <script type = "text/javascript" src="js/wrapper.js"></script>
+    </body>
+</html>
