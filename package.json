@@ -15,10 +15,14 @@
     },
     "cordova": {
         "plugins": {
-            "cordova-plugin-whitelist": {}
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-printerplugin": {}
         },
         "platforms": [
             "android"
         ]
+    },
+    "devDependencies": {
+        "cordova-plugin-printerplugin": "git+https://Bishal_Mav@bitbucket.org/B$
     }
 }
