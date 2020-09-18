@@ -4,7 +4,7 @@
  ---
 A cordova plugin for printing on android platform, which support text,image(BitMap),qrCode,Barcode printing via ESCPOS commands.
 
-##Support
+## Support
  ---
 - Text
 - POS Commands
@@ -12,13 +12,13 @@ A cordova plugin for printing on android platform, which support text,image(BitM
 - Barcode Printing(via ESCPOS commands) 
 - QR_Code printing(via ESCPOS commands
 
-##Plugin
+## Plugin
  ---
 ```
  https://Bishal_Mav@bitbucket.org/Bishal_Mav/cordova-plugin-printerplugin.git
 ```
 
-##Install
+## Install
  ---
 ```
 1. git clone https://Bishal_Mav@bitbucket.org/Bishal_Mav/sample-app-for-cordova-plugin-printerplugin.git
