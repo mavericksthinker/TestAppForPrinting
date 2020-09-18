@@ -23,6 +23,6 @@
         ]
     },
     "devDependencies": {
-        "cordova-plugin-printerplugin": "git+https://Bishal_Mav@bitbucket.org/B$
+        "cordova-plugin-printerplugin": "git+https://Bishal_Mav@bitbucket.org/Bishal_Mav/cordova-plugin-printerplugin.git"
     }
 }
